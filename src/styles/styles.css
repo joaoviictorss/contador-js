@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: white;
+}
+
+.counter {
+  border: 2px solid #c7c6c6;
+  border-bottom: 4px solid #c7c6c6;
+  padding: 3rem;
+  border-radius: 0.75rem;
+  background-color: #ffedd5;
+}
+
+.counter div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#value {
+  font-size: 8rem;
+  color: black;
+  min-width: 14rem;
+  text-align: center;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 400;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.button-blue {
+  background-color: #38bdf8;
+  border-bottom: 4px solid #0ea5e9;
+}
+
+.button-blue:active {
+  border-bottom: none;
+}
+
+.button-green {
+  background-color: #22c55e;
+  border-bottom: 4px solid #16a34a;
+}
+
+.button-green:active {
+  border-bottom: none;
+}
+
+.button-rose {
+  background-color: #f43f5e;
+  border-bottom: 4px solid #e11d48;
+}
+
+.button-rose:active {
+  border-bottom: none;
+}
+
+.count-button {
+  min-width: 6rem;
+  height: 6rem;
+  font-size: 3rem;
+}
+
+.reset-button {
+  height: 4rem;
+  width: 100%;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+@media (max-width: 640px) {
+  #value {
+    font-size: 5rem;
+    order: -1;
+  }
+
+  .count-button {
+    width: 100%;
+    height: 4rem;
+    font-size: 3rem;
+  }
+
+  .counter {
+    padding: 2rem;
+  }
+
+  .counter div {
+    display: flex;
+    flex-direction: column;
+  }
+}
